@@ -1,0 +1,201 @@
+html 
+{
+
+scroll-behavior:smooth;
+
+}
+body 
+{
+	background-color:lightgrey;
+	font-family:helvetica, arial;
+	margin:10px;
+}
+#header 
+{
+	width:90%;
+	height:100px;
+	background-color:#782f41;
+	padding:20px;
+	margin:20px 20px 20px 63px;
+	border:5px solid #b99853;
+	border-radius: 30px;
+	position:relative;
+
+	
+	
+	
+
+}
+#heading 
+{
+	
+
+	height: 150px;
+	width:105%;
+	margin: 5px;
+	background-color:#b99853;
+	border-radius: 30px;
+	color:#782f41;
+	text-align:left;
+	border: 5px solid #782f41;
+	font-family:impact;
+	font-weight:bold;
+	font-size:40px;
+	font-style: oblique;
+	line-height:.5;
+	padding:0px 0px 0px 30px;
+	
+}
+ul 
+{
+	list-style-type: none; 
+	margin:0; 
+	padding:0;
+	overflow: hidden;
+	background-color: #782f41;
+	
+
+}
+li a 
+{
+
+	display: block;
+	text-decoration: none; 
+	color:white;
+	font-family:impact;
+	padding: 14px 16px;
+	text-align: center;
+
+}
+li 
+{ 
+	float:left;
+
+
+}
+li a:hover 
+{
+
+	background-color: #a5405a;
+
+}
+#nav 
+{ 
+	margin: 100px -10px 30px -10px;
+	position:relative;
+	
+	
+
+}
+* 
+{
+   box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container1 
+{
+   position: relative;
+	margin:80px 60px 60px 60px;
+	border: 10px solid #782f41;
+}
+
+/* Hide the images by default */
+.Slides 
+{
+   display: none;
+	background-color:#b99853;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor 
+{
+   cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next 
+{
+   cursor: pointer;
+   position: absolute;
+   top: 40%;
+   width: auto;
+   padding: 16px;
+   margin-top: -50px;
+   color: white;
+	background-color: darkgrey;
+	opacity:.5;
+   font-weight: bold;
+   font-size: 20px;
+   border-radius: 0 3px 3px 0;
+   user-select: none;
+   -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next 
+{
+   right: 0;
+   border-radius: 3px 0 0 3px;
+	
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover 
+{
+   background-color: #b99853;
+}
+
+/* Number text (1/3 etc) */
+.numbertext 
+{
+   color: #f2f2f2;
+   font-size: 12px;
+   padding: 8px 12px;
+   position: absolute;
+   top: 0;
+}
+
+/* Container for image text */
+.caption-container 
+{
+   text-align: center;
+   background-color: #b99853;
+   padding: 2px 0px;
+   color: #782f41;
+   font-size:32px;
+   font-family:impact;
+   font-style: normal;
+   
+}
+
+.row:after 
+{
+   content: "";
+   display: table;
+   clear: both;
+	
+}
+
+/* Six columns side by side */
+.column 
+{
+   float: left;
+   width: 16.66%;
+}
+
+ /* Add a transparency effect for thumnbail images */
+
+.demo 
+{
+   opacity:0.6;
+}
+
+.active,
+.demo:hover 
+{
+   opacity:1; 
+}
+ 

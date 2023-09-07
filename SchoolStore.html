@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+	<meta charset=utf-8>
+	<title>Riverdale School Store</title>
+	<link rel="stylesheet" type="text/css" href="SchoolStore.css">
+</head>
+
+<body>
+	<div id="container">
+		<div id="header">
+			<div id="heading">
+ 				<h1>School Store Gallery</h1>
+				
+			</div>
+
+			
+		</div>
+
+		
+
+		<div id="content">
+			<div id="nav">
+				<ul>
+					<li><a href="#slideshow">Home</a></li>
+					<li><a href="#location">Location</a></li>
+					<li><a href="https://rdh.leeschools.net/" target="_blank">School Website</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+				
+				
+			</div>
+
+			<div id="slideshow">
+				<!-- Container for the image gallery -->
+ 				<div class="container1">
+
+ 					<div class="Slides"> <!-- Image One -->
+   						<div class="numbertext">1 / 6</div>
+     							<img src="IMG1.jpg" alt="Image one" style="width:100%">
+ 					</div>
+
+ 					<div class="Slides"> <!-- Image Two -->
+    						<div class="numbertext">2 / 6</div>
+							<img src="IMG2.jpg" alt="Image two" style="width:100%">
+					</div>
+
+					<div class="Slides"> <!-- Image Three -->		
+						<div class="numbertext">3 / 6</div>
+							<img src="IMG3.jpg" alt="Image three" style="width:100%">
+					</div>
+
+					<div class="Slides"> <!-- Image Four -->
+						<div class="numbertext">4 / 6</div>
+							<img src="IMG4.jpg" alt="Image four" style="width:100%">
+					</div>
+
+					<div class="Slides"> <!-- Image Five -->
+						<div class="numbertext">5 / 6</div>
+							<img src="IMG5.jpg" alt="Image five" style="width:100%">
+					</div>
+
+					<div class="Slides"> <!-- Image Six -->
+						<div class="numbertext">6 / 6</div>
+							<img src="IMG6.jpg" alt="Image six" style="width:100%">
+					</div>
+
+					<!-- Next and previous buttons -->
+  						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+ 						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+					<!-- Image text -->
+						<div class="caption-container">
+							<p id="caption"></p>
+						</div>
+
+					<!-- Thumbnail images -->
+					<div class="row">
+						<div class="column">
+							<img class="demo cursor" src="IMG1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Image one">
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="IMG2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Image two">
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="IMG3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Image three">
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="IMG4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Image four">
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="IMG5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Image five">
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="IMG6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Image six">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="location">
+				<div id="media">
+					<img src="" alt="Picture or video of the store">
+				</div>
+			
+
+				<div id="schoolmap">
+					<img src="" alt="Picture of the school map">
+				</div>
+			</div>
+
+		</div>
+		
+		<div id="footer">
+			
+			<div id="2ndlogo">
+				<img src="logo.jpg" style= "width:150px" alt="logo">
+			</div>
+	
+			<div id="information">
+				<ul>
+					<li>2600 Buckingham Rd, Fort Myers, FL 33905</li>
+					<li>(239)-694-4141</li>
+					<li>(239)-694-3527</li>
+				</ul>
+			</div>
+		</div>			
+		
+
+	</div>
+
+<script>
+ var slideIndex = 1;
+ showSlides(slideIndex);
+
+ // Next/previous controls
+ function plusSlides(n) {
+   showSlides(slideIndex += n);
+ }
+
+ // Thumbnail image controls
+ function currentSlide(n) {
+   showSlides(slideIndex = n);
+ }
+
+ function showSlides(n) {
+   var i;
+   var slides = document.getElementsByClassName("Slides");
+   var dots = document.getElementsByClassName("demo");
+   var captionText = document.getElementById("caption");
+   if (n > slides.length) {slideIndex = 1}
+   if (n < 1) {slideIndex = slides.length}
+   for (i = 0; i < slides.length; i++) {
+     slides[i].style.display = "none";
+   }
+   for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" active", "");
+   }
+   slides[slideIndex-1].style.display = "block";
+   dots[slideIndex-1].className += " active";
+   captionText.innerHTML = dots[slideIndex-1].alt;
+ }
+</script>
+
+</body>
+
+
+</html>
